@@ -29,7 +29,7 @@ public class Stickers {
         for (int x = 0; x < ducksCounter; x = x + 1) {
             WebElement duck = ducks.get(x);
             int counterStickers = duck.findElements(By.cssSelector(".sticker")).size();
-            if ((counterStickers != 1 ) && (counterStickers != 0 )) throw new AssertionError();
+            if (counterStickers != 1 ) throw new AssertionError();
         }
     }
 
